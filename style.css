@@ -1,0 +1,76 @@
+.modal-wrapper {
+    height: 100%;
+    width:  100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 3;
+    background: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-modal {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 8px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+.close {
+    position: absolute;
+    top: 540px;
+    right: 700px;
+}
+
+.card {
+    padding: 5px 5px;
+    margin-right: 10px;
+}
+
+[data-card-show] {
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    width: 70%;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 7;
+    background-color: rgb(255, 208, 0);
+}
+
+.img_card_show {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 33.333%;
+    object-fit: cover;
+}
+
+.card__info {
+    display: flex;
+    width: 66.666%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input:invalid {
+    border: 2px dashed red;
+}
+  
+input:invalid:required {
+    background-image: linear-gradient(to right, rgb(180, 154, 159), lightgreen);
+}
+
